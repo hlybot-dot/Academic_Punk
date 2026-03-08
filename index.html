@@ -229,12 +229,43 @@
     }
 
     @media (max-width: 660px) {
+      /* 整体 */
       body { height: auto; overflow: auto; }
-      .top-nav { padding: 1.2rem 1.5rem 0.6rem; gap: 1.2rem; }
-      .title-block { padding: 0.5rem 1.5rem 0; }
-      .hero-body { grid-template-columns: 1fr; gap: 2rem; padding: 1.5rem; }
+
+      /* 导航栏：logo和链接上下排列 */
+      .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.2rem 1.5rem;
+        gap: 1.2rem;
+      }
+
+      /* 导航链接缩小间距 */
+      .nav-links {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+      }
+
+      /* 标题字体缩小 */
+      .w-academic { font-size: 1.4rem; }
+      .w-punk { font-size: 1.6rem; }
+
+      /* hero区域：图片和文字上下排列 */
+      .hero-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1.5rem;
+      }
+
+      /* 图片移到文字上面 */
       .photo-wrap { order: -1; }
-      .photo-circle { width: 140px; height: 140px; }
+
+      /* 图片缩小 */
+      .photo-circle { width: 150px; height: 150px; }
+
+      /* 正文字体缩小一点 */
+      .intro p { font-size: 0.95rem; }
     }
   </style>
 </head>
