@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Punk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Special+Elite&family=VT323&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --pink: #e8507a;
+      --black: #111;
+      --bg: #fafaf7;
+      --muted: #666;
+      --green: #3a8c4a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+      /* 保持标题的艺术字体，但修改正文和导航的字体 */
+      .w-academic { font-family: 'Bebas Neue', sans-serif; }
+      .w-punk { font-family: 'Bebas Neue', sans-serif; }
+
+    .nav-links a, .nav-search {
+      font-family: inherit; /* 自动继承 body 的现代字体 */
+      font-size: 0.95rem;
+      color: #333;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    
+    /* ── NAV ── */
+    .main-header {
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+
+    .nav-links a, .nav-search {
+      font-family: 'Bebas Neue', sans-serif;  
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;              
+      color: var(--black);
+      text-decoration: none;
+      transition: color 0.15s;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .nav-links {
+      display: flex;
+      gap: 3rem;   /* ← 把这个调大，链接之间距离变宽 */
+    }
+
+
+    .nav-links a:hover, .nav-search:hover {
+      color: var(--pink);
+    }
+
+    .nav-links a.active {
+        color: var(--pink);
+    }
+
+    .nav-search svg {
+      width: 13px;
+      height: 13px;
+      margin-right: 4px;
+    }
+    nav {
+      border-bottom: 2px solid #000;
+      padding-bottom: 16px;
+    }
+
+    /* ── TITLE BLOCK ── */
+    .title-block {
+      padding: 0.5rem 3.5rem 0;
+      flex-shrink: 0;
+    }
+
+    /* punk collage title — each word its own style */
+    .punk-title {
+      display: flex;
+      align-items: flex-end;
+      gap: 6px;
+      line-height: 1;
+      flex-wrap: wrap;
+    }
+
+    .w-academic {
+      font-family: 'Special Elite', monospace;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      color: var(--black);
+      border: 4px solid var(--black);
+      padding: 0.02em 0.15em;
+      letter-spacing: 0.01em;
+      display: inline-block;
+      transform: rotate(-2deg);
+      animation: popIn 0.45s cubic-bezier(0.175,0.885,0.32,1.275) both;
+      line-height: 1;
+    }
+
+    .w-punk-wrap {
+      position: relative;
+      display: inline-block;
+      animation: popIn 0.45s 0.12s cubic-bezier(0.175,0.885,0.32,1.275) both;
+      line-height: 1;
+    }
+    .w-punk-bg {
+      position: absolute;
+      inset: 0 -4px;
+      background: var(--pink);
+      transform: rotate(0.6deg) skewX(-1deg);
+      z-index: 0;
+    }
+    .w-punk {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1.8rem, 5.5vw, 3rem);
+      color: #fff;
+      position: relative; z-index: 1;
+      display: inline-block;
+      transform: rotate(1.2deg);
+      padding: 0 8px;
+      letter-spacing: 0.02em;
+      line-height: 1.05;
+    }
+
+    /* scratch line */
+    .scratch {
+      margin-top: 0.7rem;
+      height: 4px;
+      width: min(260px, 85vw);
+      background: repeating-linear-gradient(
+        90deg,
+        var(--black) 0 32px, transparent 32px 40px,
+        var(--pink)  40px 72px, transparent 72px 80px
+      );
+      transform: rotate(-0.3deg);
+      animation: popIn 0.4s 0.28s ease both;
+    }
+
+    /* ── HERO BODY ── */
+    .hero-body {
+      flex: 1;
+      display: flex; /* 改用 Flex 布局更好控制居中 */
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      max-width: 800px; /* 限制最大宽度，防止内容被拉得太宽 */
+      margin: 0 auto; /* 自动左右边距，让整个块居中 */
+      padding: 2rem;
+    }
+    
+    
+    .intro p {
+      font-family: 'Playfair Display', serif; 
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #333; /* 稍微调浅一点黑色，像墨水没那么深 */
+      letter-spacing: 0.5px; /* 增加一点点字符间距，更有机械打字的感觉 */
+    }
+
+/* 加上一个淡淡的纸张底纹（可选） */
+    body {
+      background-color: #fafaf7;
+      background-image: url('data:image/svg+xml;utf8,<svg ...纸张纹理代码... </svg>'); 
+    }
+    .intro p:nth-child(1) { animation-delay: 0.3s; }
+    .intro p:nth-child(2) { animation-delay: 0.38s; }
+    .intro p:nth-child(3) { animation-delay: 0.46s; }
+    .intro p:nth-child(4) { animation-delay: 0.54s; }
+
+    /* photo */
+    .photo-circle {
+      width: 210px; 
+      height: 210px; 
+      border-radius: 50%;
+      border: none; 
+      box-shadow: 15px 15px 0px #eaf519;
+      overflow: hidden;
+      background: #efefeb;
+      flex-shrink: 0;
+    }
+
+    .photo-circle img { 
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; /* 自动剪裁，保持图片充满圆圈而不变形 */
+      display: block; 
+    }
+    
+
+    /* search overlay */
+    .search-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(250,250,247,0.96); z-index: 200;
+      align-items: center; justify-content: center;
+    }
+    .search-overlay.open { display: flex; }
+    .search-overlay input {
+      width: min(500px, 90vw); padding: 0.8rem 1rem;
+      font-family: Georgia, serif; font-size: 1.1rem;
+      border: none; border-bottom: 2px solid var(--black); outline: none; background: transparent;
+    }
+    .search-close {
+      position: absolute; top: 2rem; right: 2.5rem;
+      font-size: 1.5rem; background: none; border: none; cursor: pointer; color: var(--muted);
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.9) rotate(-2deg); }
+      to   { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 660px) {
+      /* 整体 */
+      body { height: auto; overflow: auto; }
+
+      /* 导航栏：logo和链接上下排列 */
+      .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.2rem 1.5rem;
+        gap: 1.2rem;
+      }
+
+      /* 导航链接缩小间距 */
+      .nav-links {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+      }
+
+      /* 标题字体缩小 */
+      .w-academic { font-size: 1.4rem; }
+      .w-punk { font-size: 1.6rem; }
+
+      /* hero区域：图片和文字上下排列 */
+      .hero-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1.5rem;
+      }
+
+      /* 图片移到文字上面 */
+      .photo-wrap { order: -1; }
+
+      /* 图片缩小 */
+      .photo-circle { width: 150px; height: 150px; }
+
+      /* 正文字体缩小一点 */
+      .intro p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo-container">
+    <div class="punk-title">
+      <span class="w-academic">ACADEMIC</span>
+      <span class="w-punk-wrap">
+        <span class="w-punk-bg"></span>
+        <span class="w-punk">PUNK</span>
+      </span>
+    </div>
+    <div class="scratch"></div>
+  </div>
+  
+  <nav class="nav-links">
+    <a href="index.html">About</a>
+    <a href="resources.html">resources</a>
+    <a href="blog.html">blog</a>
+    <a href="music.html" class="active">Music</a>
+    <button class="nav-search" onclick="document.querySelector('.search-overlay').classList.add('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      search
+    </button>
+  </nav>
+</header>
+
+<div style="max-width:800px; margin: 3rem auto; padding: 0 2rem;">
+    <h2 style="font-family:'Special Elite',monospace; font-size:1.5rem; margin: 2rem 0 1rem; text-transform: capitalize;">
+        Recommended Podcasts
+    </h2>
+
+<ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+  <li>
+    <a href="https://www.thatrecordgotmehigh.com/" target="_blank" 
+       style="color: var(--pink); font-size: 1rem; text-decoration: none; border-bottom: 2px solid var(--pink); font-family:'Playfair Display',serif;">
+      That Record Got Me High
+    </a>
+  </li>
+  <li>
+    <a href="https://www.patreon.com/cw/tapenotes" target="_blank"
+       style="color: var(--pink); font-size: 1rem; text-decoration: none; border-bottom: 2px solid var(--pink); font-family:'Playfair Display',serif;">
+      Tape Notes
+    </a>
+  </li>
+</ul>
+
+</div>
+
+<div class="search-overlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <button class="search-close" onclick="document.querySelector('.search-overlay').classList.remove('open')">✕</button>
+  <input type="text" placeholder="Search resources..."/>
+</div>
+
+
+
+</body>
+</html>
