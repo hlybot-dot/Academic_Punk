@@ -20,6 +20,10 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
+    body {
+    background-color: #fafaf7;
+    }
+
       /* 保持标题的艺术字体，但修改正文和导航的字体 */
       .w-academic { font-family: 'Bebas Neue', sans-serif; }
       .w-punk { font-family: 'Bebas Neue', sans-serif; }
@@ -164,43 +168,7 @@
       padding: 2rem;
     }
     
-    
-    .intro p {
-      font-family: 'Playfair Display', serif; 
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #333; /* 稍微调浅一点黑色，像墨水没那么深 */
-      letter-spacing: 0.5px; /* 增加一点点字符间距，更有机械打字的感觉 */
-    }
 
-/* 加上一个淡淡的纸张底纹（可选） */
-    body {
-      background-color: #fafaf7;
-      background-image: url('data:image/svg+xml;utf8,<svg ...纸张纹理代码... </svg>'); 
-    }
-    .intro p:nth-child(1) { animation-delay: 0.3s; }
-    .intro p:nth-child(2) { animation-delay: 0.38s; }
-    .intro p:nth-child(3) { animation-delay: 0.46s; }
-    .intro p:nth-child(4) { animation-delay: 0.54s; }
-
-    /* photo */
-    .photo-circle {
-      width: 210px; 
-      height: 210px; 
-      border-radius: 50%;
-      border: none; 
-      box-shadow: 15px 15px 0px #eaf519;
-      overflow: hidden;
-      background: #efefeb;
-      flex-shrink: 0;
-    }
-
-    .photo-circle img { 
-      width: 100%; 
-      height: 100%; 
-      object-fit: cover; /* 自动剪裁，保持图片充满圆圈而不变形 */
-      display: block; 
-    }
     
 
     /* search overlay */
