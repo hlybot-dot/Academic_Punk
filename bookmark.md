@@ -17,5 +17,6 @@ Author's note: I tend to bookmark way too many tutorials and resources, so I som
   </p>
 - [Bayesian Models of Cognition: Reverse Engineering the Mind](https://books.google.ca/books/about/Bayesian_Models_of_Cognition.html?id=FEb6EAAAQBAJ&redir_esc=y)
 - [The Laws of Thought: The Quest for a Mathematical Theory of the Mind](https://books.google.ca/books/about/The_Laws_of_Thought_The_Quest_for_a_Math.html?id=UctwEQAAQBAJ&redir_esc=y)
+- [Probabilistic Models of Cognition](http://probmods.org/)
 
  
