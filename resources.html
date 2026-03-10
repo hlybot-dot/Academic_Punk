@@ -215,8 +215,19 @@
     background: var(--black);
     padding: 0.1em 0.5em;
     margin-bottom: 0.5rem;
-   }
+    }
    .tag.pink { background: var(--pink); }
+
+    .subtopic {
+        font-family: 'Special Elite', monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        letter-spacing: 0.1em;
+        margin: 1.2rem 0 0.6rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px dashed #ccc;
+    }
+
 
     .resource-item a {
     color: var(--black);
@@ -230,6 +241,7 @@
       color: var(--pink);
       border-bottom-color: var(--pink);
     }
+
 
   .magazine {
       max-width: 800px;
@@ -260,6 +272,8 @@
         font-weight: 700;
         color: var(--pink);
       }
+
+
 
     /* search overlay */
     .search-overlay {
@@ -352,6 +366,7 @@
       <span class="accordion-arrow">▼</span>
     </button>
     <div class="accordion-content">
+      
       <div class="resource-item">
         <div class="tag">YouTube</div><br/>
         <a href="https://www.youtube.com/watch?v=vtIzMaLkCaM&t=360s" target="_blank">
@@ -365,6 +380,8 @@
         </a>
       </div>
 
+      
+
 
 
       </div>
@@ -377,6 +394,8 @@
       <span class="accordion-arrow">▼</span>
     </button>
     <div class="accordion-content">
+    <div class="subtopic">── Learn R ──</div>
+
 
       <div class="resource-item">
         <div class="tag">Book · EN</div><br/>
@@ -386,7 +405,7 @@
       </div>      
 
       <div class="resource-item">
-        <div class="tag">Book · EN</div><br/>
+        
         <a href="https://www.statlearning.com/" target="_blank">
           An Introduction to Statistical Learning with Applications in R
         </a>
@@ -410,6 +429,18 @@
         <a href="https://bookdown.org/wangminjie/R4DS/index.html" target="_blank">
           数据科学中的 R 语言 (Chinese Version)
         </a>
+
+      <div class="subtopic">── Visualization (very creative!) ──</div>
+
+        <a href="http://mfviz.com/hierarchical-models/" target="_blank">
+          An Introduction to Hierarchical Modeling
+        </a>
+        <br>
+
+        <a href="https://seeing-theory.brown.edu/index.html" target="_blank">
+          Seeing Theory: A Visual Introduction to Probability and Statistics
+        </a>
+
       </div>
 
 
@@ -427,16 +458,11 @@
     <div class="accordion-content">
 
       <div class="resource-item">
-        <a href="https://xcelab.net/rm/" target="_blank">
           Statistical Rethinking
         </a>
       </div>      
 
-      <div class="resource-item">
-        <a href="https://bruno.nicenboim.me/bayescogsci/" target="_blank">
-          Introduction to Bayesian Data Analysis for Cognitive Science
-        </a>
-      </div>
+
     </div>
   </div>
 </div>
