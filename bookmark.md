@@ -5,6 +5,14 @@
  
 Author's note: I tend to bookmark way too many tutorials and resources, so I sometimes find myself overwhelmed by too much information. Here I share what I've already read or plan to read!
 
+#### Before everything begins... 
+- [Ten simple rules for the computational modeling of behavioral data](https://elifesciences.org/articles/49547/)
+- [How computational modeling can force theory building in psychological
+science](https://openreview.net/pdf?id=QjUEAuHHq86)
+
+
+
+
 #### Bayesian Statistics 
 
 - [Statistical Rethinking](https://xcelab.net/rm/)
