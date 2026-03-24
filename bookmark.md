@@ -23,8 +23,9 @@ science](https://openreview.net/pdf?id=QjUEAuHHq86)
   <p style="margin-left:1rem; color:gray; font-style:italic;">
   reading now or pretend to read:）
   </p>
+- [Computational modeling of cognition and behavior](https://psy-farrell.github.io/computational-modelling/)
 - [Bayesian Models of Cognition: Reverse Engineering the Mind](https://books.google.ca/books/about/Bayesian_Models_of_Cognition.html?id=FEb6EAAAQBAJ&redir_esc=y)
-- [The Laws of Thought: The Quest for a Mathematical Theory of the Mind](https://books.google.ca/books/about/The_Laws_of_Thought_The_Quest_for_a_Math.html?id=UctwEQAAQBAJ&redir_esc=y)
+- [✅ The Laws of Thought: The Quest for a Mathematical Theory of the Mind](https://books.google.ca/books/about/The_Laws_of_Thought_The_Quest_for_a_Math.html?id=UctwEQAAQBAJ&redir_esc=y)
 - [Probabilistic Models of Cognition](http://probmods.org/)
 
  
